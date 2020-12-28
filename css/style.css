@@ -583,6 +583,11 @@ img{
     .tabs i{
         font-size: 2rem;
     }
+    .style-cards{
+        margin: auto;
+        overflow: hidden;
+        margin-left: 0; 
+    }
 }
 
 
@@ -722,6 +727,10 @@ img{
     .accordion-faq h2{
         font-size: 1.7rem;
     }
+
+      .accordion , .accordion-faq .panel{
+        font-size: 1.3rem;
+      }
     
     .card-3 .desc-3 p{
         font-size: 1.3rem;
@@ -865,6 +874,12 @@ img{
 @media(min-width: 320px) and (max-width: 360px) {
     .showcase{
         height: 90vh !important;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 321px) {
+    .style-cards{
+        display: none !important;
     }
 }
 
