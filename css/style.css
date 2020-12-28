@@ -93,7 +93,7 @@ img{
 
 .showcase-content h1{
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.1;
     margin: 0 0 2rem;
 }
@@ -102,7 +102,7 @@ img{
     text-transform: uppercase;
     color: white;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 1.25;
     margin: 0 0 2rem;
 }
@@ -357,6 +357,10 @@ img{
     padding-left: 80px;
     padding-right: 40px;
 }
+.style-cards{
+    margin: auto;
+    overflow: hidden;    
+}
 .style-cards h2{
     font-size: 2.8rem;
     padding:1rem;
@@ -502,6 +506,10 @@ img{
   }
 
 @media(max-width: 960px){
+    body{
+        overflow: hidden;
+    }
+
     .showcase{
         height: 75vh;
     }
@@ -529,7 +537,7 @@ img{
     .tabs{
         background: var(--dark-color);
         padding-top: 0rem;
-        padding-bottom: 0.8rem;
+        padding-bottom: 0.05rem;
         border-bottom: 3px solid #3d3d3d;
     }
     .tabs .container{
@@ -551,7 +559,7 @@ img{
     }
 
     .btn-xl{
-        font-size: 0.95rem;
+        font-size: 0.8rem;
         padding: 1.2rem 1.5rem;
         border-radius: 4px;
     }
@@ -568,15 +576,25 @@ img{
     .text-md{
         font-size: 0.5rem;
     }
+    /* .tabs p{
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    } */
+    .tabs i{
+        font-size: 2rem;
+    }
 }
 
 
 
 @media(max-width: 700px){
+    body{
+        overflow: hidden;
+    }
+
     .showcase::after{
         box-shadow: inset 90px 90px 250px #000000
     }
-
 
     #tab-1-content .tab-1-content-inner{
         grid-template-columns: 1fr;
@@ -750,9 +768,11 @@ img{
         margin: 0 2rem 0;
     }
 
+
 }
 
 @media(min-width: 768px) and (max-width: 1024px) {
+    
     .showcase{
         height: 55vh;
     }
@@ -842,9 +862,15 @@ img{
     }
 }
 
+@media(min-width: 320px) and (max-width: 360px) {
+    .showcase{
+        height: 90vh !important;
+    }
+}
+
 @media(max-width: 320px){
  .showcase-content{
-       margin-top: 32px;
+       margin-top: 50px;
    }
 }
 
